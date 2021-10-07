@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/Login Page.css">
+
     <title>Login Page</title>
 </head>
+
 <body>
-    
+    <div class="login">
+        <h2>用户登录</h2>
+        <div class="login_box">
+            <!-- required就是不能为空  必须在css效果中有很大的作用 -->
+            <input type="text" name='name' id='name' required />
+            <label for="name">用户名</label>
+        </div>
+        <div class="login_box">
+            <input type="password" name='pwd' id='pwd' required="required">
+            <label for="pwd">密码</label>
+        </div>
+        <a href="javascript:void(0)">
+            登录
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+
+    </div>
 </body>
 </html>
