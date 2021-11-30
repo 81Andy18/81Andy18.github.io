@@ -152,6 +152,24 @@
     margin-left: 10px;
 }
 
+@media (max-width: 1024px) {
+    .search-txt {
+        width: 0px;
+        margin-left: 0;
+    }
+
+    .search-box:hover>.search-txt {
+        width: 200px;
+        padding: 0 6px;
+    }
+
+    .search-box {
+        width: auto;
+        transform: translate(-100%);
+        left: 90%;
+    }
+}
+
 /* header */
 
 a {
@@ -593,6 +611,7 @@ a:not([href]):hover {
 .container2 .box:nth-child(3)::after {
     background: linear-gradient(315deg, #4dff03, #00d0ff);
 }
+
 .container2 .box:nth-child(4)::before,
 .container2 .box:nth-child(4)::after {
     background: linear-gradient(315deg, #0081ff, #1cbbb4);
