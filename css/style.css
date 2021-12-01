@@ -46,7 +46,7 @@
 .box img {
     font-size: 60px;
     position: absolute;
-    margin: 14px 0 0 10.5px;
+    margin: 32px 0 0 10.5px;
     top: 8px;
 }
 
@@ -63,7 +63,7 @@
 
 .box span {
     position: relative;
-    top: 26px;
+    top: 45px;
     left: 60px;
     font: 500 20px '';
     opacity: 0;
@@ -126,12 +126,12 @@
 
     .shell:hover {
         height: 90vh;
-        transiton: 500ms;
+        transition: 500ms;
     }
 
     .shell:hover>.box {
         height: 24%;
-        transiton: 500ms;
+        transition: 500ms;
     }
 
     .shell:hover>#display {
