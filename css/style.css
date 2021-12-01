@@ -47,7 +47,7 @@
     font-size: 60px;
     position: absolute;
     top: 30%;
-    margin: 0 0 0 10.5px;
+    left: 11px;
 }
 
 .box:nth-child(1)::before,
