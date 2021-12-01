@@ -1191,27 +1191,6 @@ p {
     font: normal normal normal 1 FontAwesome;
 }
 
-#footer .fa-twitter::before {
-    content: "";
-}
-
-#footer .fa-facebook-f::before,
-#footer .fa-facebook::before {
-    content: "";
-}
-
-#footer .fa-instagram::before {
-    content: "";
-}
-
-#footer .fa-google-plus::before {
-    content: "";
-}
-
-#footer .fa-linkedin::before {
-    content: "";
-}
-
 #footer input {
     font-family: inherit;
     font-size: inherit;
