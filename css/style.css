@@ -125,6 +125,10 @@
         height: 25px;
     }
 
+    #Menu img {
+        left: 15px;
+    }
+
     .display {
         display: none;
     }
@@ -143,6 +147,9 @@
         display: block;
     }
 
+    .shell:hover>#Menu img {
+        left: 11px;
+    }
 }
 
 /* seach-box */
