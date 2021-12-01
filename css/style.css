@@ -126,16 +126,17 @@
 
     .shell:hover {
         height: 90vh;
-        transition: 500ms;
+        transition: 1s;
     }
 
     .shell:hover>.box {
         height: 24%;
-        transition: 500ms;
+        transition: 1s;
     }
 
     .shell:hover>#display {
         display: block;
+        transition: 1s;
     }
 
 }
