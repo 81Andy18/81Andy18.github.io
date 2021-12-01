@@ -46,7 +46,8 @@
 .box img {
     font-size: 60px;
     position: absolute;
-    margin: 32px 0 0 10.5px;
+    top: 30%;
+    margin: 0 0 0 10.5px;
 }
 
 .box:nth-child(1)::before,
@@ -62,7 +63,7 @@
 
 .box span {
     position: relative;
-    top: 45px;
+    top: 35%;
     left: 60px;
     font: 500 20px '';
     opacity: 0;
@@ -117,6 +118,11 @@
 
     .box {
         height: 80px;
+    }
+
+    .box img {
+        width: 25px;
+        height: 25px;
     }
 
     .display {
