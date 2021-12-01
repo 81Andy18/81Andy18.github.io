@@ -43,6 +43,33 @@
     z-index: 0;
 }
 
+@media (max-width:425px) {
+    .shell {
+        height: 100px;
+    }
+
+    .box {
+        height: 80px;
+    }
+
+    #display {
+        display: none;
+    }
+
+    .shell:hover {
+        height: 90vh;
+    }
+
+    .shell:hover>.box {
+        height: 24%;
+    }
+
+    .shell:hover>#display {
+        display: block;
+    }
+
+}
+
 .box img {
     font-size: 60px;
     position: absolute;
