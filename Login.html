@@ -1,12 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login an account</title>
+    <title>Login Account</title>
+
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="//unpkg.com/@coreui/icons@2.0.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style2.css">
 </head>
+
 <body>
-    
+    <div class="wrap">
+        <div class="form">
+            <div class="left"><video src="video/video.mp4" muted loop autoplay></video></div>
+            <div class="right">
+                <div class="right-con">
+                    <h1>Here Sign In</h1>
+                    <h2 class="mb-4" style="display:inline-block">登录 <span style="font-size:16px"> 没有帐号? <a
+                                href="Register.html">注册</a> </span></h2>
+                    <h3>Email</h3>
+                    <input type="email" class="text" placeholder="Email">
+                    <h3>Password</h3>
+                    <input type="password" class="text" placeholder="Password">
+                    <span class="d-block text-lg-right mt-1">
+                        <small> <a id="forgot-password" href="/Identity/Account/ForgotPassword">忘记密码？无法激活？</a> </small>
+                    </span>
+                    <input type="submit" class="btn" value="LOGIN">
+                    <form id="external-account" method="post" class="form-horizontal"
+                        action="/Identity/Account/ExternalLogin?returnUrl=%2FOriginal%2FIndex">
+                        <div class="row">
+                            <div class="col-sm-12 mb-2 text-center position-relative pt-2 pb-3 px-0">
+                                <hr class="mw-100 position-absolute z-index-100"
+                                    style="width:calc(100% - 30px);margin-left:15px">
+                            </div>
+                            <div class="col-sm-12 mb-2 text-center position-relative pt-2 pb-3 px-0">
+                                <small
+                                    class="px-3 background--light position-relative z-index-105">使用第三方帐号直接登录，免注册、更安全、更便捷</small>
+                            </div>
+                            <div class="col-sm-12 mb-2"
+                                style="display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;font-size:32px">
+                                <input type="hidden" name="provider"> <a href="javascript:void(0)"
+                                    class="pad-rgt social-login-link" title="使用 Microsoft 帐号登录"
+                                    data-provider="Microsoft">
+                                    <i class="cib-microsoft icon-lg"></i> </a> <a href="javascript:void(0)"
+                                    class="pad-rgt social-login-link" title="使用 QQ 帐号登录" data-provider="QQ"> <i
+                                        class="cib-qq icon-lg"></i> </a> <a href="javascript:void(0)"
+                                    class="pad-rgt social-login-link" title="使用 Weibo 帐号登录" data-provider="Weibo"> <i
+                                        class="cib-sina-weibo icon-lg"></i> </a> <a href="javascript:void(0)"
+                                    class="pad-rgt social-login-link" title="使用 GitHub 帐号登录" data-provider="GitHub"> <i
+                                        class="cib-github icon-lg"></i> </a> <a href="javascript:void(0)"
+                                    class="pad-rgt social-login-link" title="使用 Baidu 帐号登录" data-provider="Baidu"> <i
+                                        class="cib-baidu icon-lg"></i> </a> <a href="javascript:void(0)"
+                                    class="pad-rgt social-login-link" title="使用 Alipay 帐号登录" data-provider="Alipay"> <i
+                                        class="cib-alipay icon-lg"></i> </a></div>
+                            <div class="col-sm-12 mb-2 text-center position-relative pt-2 pb-3 px-0">
+                                <hr class="mw-100 position-absolute z-index-100"
+                                    style="width:calc(100% - 30px);margin-left:15px">
+                            </div>
+                        </div>
+                    </form>
+                    <footer class="mt-5">
+                        <small>©2020 - Bohemian.CN. All rights reserved. <br>
+                            <span>推荐使用 <a href="//www.microsoft.com/zh-cn/edge" target="_blank">新版 Microsoft Edge
+                                    浏览器</a>
+                                访问本站
+                            </span>
+                        </small>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
