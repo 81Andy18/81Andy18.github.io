@@ -1266,7 +1266,7 @@ html [type="button"] {
     z-index: 11;
     background: rgb(24, 210, 110);
     border-radius: 50%;
-    transition: background 0.5s ease 0s;
+    transition: background 1s ease 0s;
     font-weight: 400;
 }
 
