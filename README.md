@@ -99,6 +99,16 @@
     |-- glyphicons-halflings-regular.ttf
     |-- glyphicons-halflings-regular.woff
     |-- glyphicons-halflings-regular.woff2
+    |-- CoreUI-Icons-Brand.eot
+    |-- CoreUI-Icons-Brand.svg
+    |-- CoreUI-Icons-Brand.ttf
+    |-- CoreUI-Icons-Brand.woff
+    |-- CoreUI-Icons-Brand.woff2
+    |-- ionicons.eot
+    |-- ionicons.svg
+    |-- ionicons.ttf
+    |-- ionicons.woff
+    |-- FontAwesome.otf
  |-- index.html
  |-- Login.html
  |-- Register.html
