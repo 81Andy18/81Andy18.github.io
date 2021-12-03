@@ -38,22 +38,28 @@
 ```
  |-- css
     |-- style.css
+    |-- style2.css
+    |-- all.min.css
+    |-- font-awesome.min.css
+    |-- ionicons.min.css
+    |-- lightbox.min.css
     |-- animate.css
     |-- owl.carousel.min.css
  |-- js
     |-- jquery.min.js
     |-- jquery-migrate-3.0.1.min.js
-    |-- popper.min.js
-    |-- bootstrap.min.js
     |-- jquery.easing.1.3.js
     |-- jquery.waypoints.min.js
     |-- jquery.stellar.min.js
-    |-- owl.carousel.min.js
     |-- jquery.magnific-popup.min.js
     |-- jquery.animateNumber.min.js
-    |-- bootstrap-datepicker.js
     |-- jquery.timepicker.min.js
+    |-- bootstrap-datepicker.js
+    |-- owl.carousel.min.js
     |-- scrollax.min.js
+    |-- popper.min.js
+    |-- bootstrap.min.js
+    |-- main.js
     |-- https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js
     |-- https://use.fontawesome.com/releases/v5.0.6/js/all.js
     |-- https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js
@@ -63,16 +69,18 @@
     |-- Linux.png
     |-- ios.png
     |-- Android.png
+    |-- Menu.png
     |-- bg
         |-- Windows.jpg
         |-- macOS.jpg
         |-- iPhone.jpg        
     |-- icon
-        |-- Windows.png
-        |-- macOS.png
-        |-- Linux.png
-        |-- ios.png
-        |-- Android.png
+        |-- Windows.ico
+        |-- macOS.ico
+        |-- Linux.ico
+        |-- ios.ico
+        |-- Android.ico
+        |-- Home.ico
     |-- person
         |-- person1.jpeg
         |-- person2.jpg
