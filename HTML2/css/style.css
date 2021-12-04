@@ -38,7 +38,7 @@ a:not([href]):hover {
     position: relative;
     z-index: 4;
     box-shadow: 5px 0 10px rgb(0 0 0 / 50%);
-    background: #578fc0;
+    background: #0adddd;
     text-decoration: none;
 }
 
@@ -121,7 +121,7 @@ b img {
 
 .dropdown {
     display: inline-block;
-    left: 8%;
+    left: 6%;
     top: 50%;
 }
 
@@ -157,6 +157,7 @@ span {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     opacity: 0.9;
     top: 2.2rem;
+    border-radius: 10px;
 }
 
 .dropdown-content a {
@@ -170,10 +171,14 @@ span {
 .dropdown-content a:hover {
     background-color: rgb(55, 65, 81);
     color: #fff;
+    border-radius: 15px;
 }
 
 .dropdown:hover span {
     opacity: 1;
+}
+.dropdown-content span{
+    top: -6.5px;
 }
 
 .dropdown:hover .dropdown-content {
