@@ -21,17 +21,58 @@
     <!-- top-nav -->
     <header class="topbar">
         <nav class="navbar top-navbar navbar-expand-md navbar-light">
-            <div class="dropdown">
-                <img src="../img/Menu.png" width="30px" height="30px" class="menu">
-                <div class="dropdown-content">
-                    <a href="../index.html"><img src="../img/Home.png" width="30px" height="30px"><span>Home</span></a>
-                    <a href="Windows.html"><img src="../img/Windows.png" width="30px" height="30px"><span>Windows</span></a>
-                    <a href="macOS.html"><img src="../img/macOS.png" width="30px" height="30px"><span>macOS</span></a>
-                    <a href="Linux.html"><img src="../img/Linux.png" width="30px" height="30px"><span>Linux</span></a>
-                    <a href="Android.html"><img src="../img/Android.png" width="30px" height="30px"><span>Android</span></a>
-                    <a href="iOS.html"><img src="../img/iOS.png" width="30px" height="30px"><span>iOS</span></a>
-                </div>
+            <div class="navigation">
+                <ul>
+                    <li class="list">
+                        <a href="../index.html">
+                            <span class="icon"><img src="../img/Home.png" alt=""></span>
+                            <span class="text">Home</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="Windows.html">
+                            <span class="icon"><img src="../img/Windows.png" alt=""></span>
+                            <span class="text">Windows</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="macOS.html">
+                            <span class="icon"><img src="../img/macOS.png" alt=""></span>
+                            <span class="text">macOS</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="Linux.html">
+                            <span class="icon"><img src="../img/Linux.png" alt=""></span>
+                            <span class="text">Linux</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="Android.html">
+                            <span class="icon"><img src="../img/Android.png" alt=""></span>
+                            <span class="text">Android</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="iOS.html">
+                            <span class="icon"><img src="../img/iOS.png" alt=""></span>
+                            <span class="text">iOS</span>
+                        </a>
+                    </li>
+                    <div class="indicator"></div>
+                </ul>
             </div>
+            <script>
+                let list = document.querySelectorAll('.list');
+
+                function setActiveClass() {
+                    list.forEach((item) =>
+                        item.classList.remove('active'));
+                    this.classList.add('active');
+                }
+                list.forEach((item) =>
+                    item.addEventListener('mouseover', setActiveClass))
+            </script>
             <div class="navbar-header">
                 <a class="navbar-brand">
                     <b>
