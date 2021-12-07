@@ -15,9 +15,21 @@
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/dist/clipboard.min.js"></script>
+    <link href="css/toastr.min.css" rel="stylesheet" type="text/css" />
+    <script src="../js/dist/toastr.min.js" type="text/javascript"></script>
+
 </head>
 
 <body class="fix-header card-no-border logo-center">
+    <!-- scroll bar -->
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <!-- End scroll bar -->
+
     <!-- top-nav -->
     <header class="topbar">
         <nav class="navbar top-navbar navbar-expand-md navbar-light">
@@ -87,6 +99,268 @@
         </nav>
     </header>
     <!-- End top-nav -->
+
+    <!-- Section -->
+    <section class="rt01 rt01v0" data-trackas="rt01">
+        <div class="rt01w1 cwidth">
+            <!-- RC24v0 -->
+            <section class="rc24 rc24v0">
+                <div class="rc24w1 cwidth">
+                    <br>
+                    <h2 class="rw-ptitle"><i class="fa fa-linux"></i>&nbsp;&nbsp;Linux</h2>
+                    <p style="text-indent: 2em;font-size: 18px;">Linux, the full name of GNU/Linux, is a free-to-use and
+                        freely disseminated UNIX-like operating system. Its kernel was first released on October 5, 1991
+                        by Linus Benedicte Torvalds. It is mainly affected by Inspired by the ideas of Minix and Unix,
+                        it is a POSIX-based multi-user, multi-tasking, multi-threaded and multi-CPU operating system. It
+                        can run major Unix tools, applications, and network protocols. It supports 32-bit and 64-bit
+                        hardware. Linux inherits Unix's network-centric design philosophy and is a multi-user network
+                        operating system with stable performance. Linux has hundreds of different distributions, such as
+                        community-based debian and archlinux, and commercial-based Red Hat Enterprise Linux, SUSE,
+                        Oracle Linux, etc.</p>
+                    <p style="text-indent: 2em;font-size: 18px;">In June 2021, according to the char-misc-next
+                        submission that Linux 5.14 just entered the merge queue, Linux 5.14 officially removed the RAW
+                        driver.</p>
+                </div>
+            </section>
+            <!-- /RC24v0 -->
+
+            <br>
+            <!-- RT01v0 -->
+            <section class="rt01 rt01v0" data-trackas="rt01">
+                <div class="rt01w1 cwidth" id="selector">
+
+                    <ul class="rw-inpagetabs rw-tabinit" data-ocomid="javase11-inpagetabs" data-instance="2">
+                        <li class="active">
+                            <a href="#Linux" id="rt01tab-Linux" aria-controls="Llinux" role="tab" tabindex="0"
+                                aria-selected="true">Linux</a>
+                        </li>
+                    </ul>
+                    <div class="rw-inpagetab activetab" id="Linux" role="tabpanel" aria-labelledby="rt01tab-Linux">
+                        <!-- CC02v0 -->
+                        <section class="cb133 cb133v0" data-licenses="/a/ocom/docs/download-licenses.json"
+                            data-ocomid="cb133" data-trackas="cb133">
+                            <div class="cb133w1 cwidth">
+                                <div class="otable otable-scrolling" data-ocomid="otable">
+                                    <div class="otable-w1">
+                                        <table class="otable-w2">
+                                            <thead>
+                                                <tr>
+                                                    <th class="otable-col-head">Product/file description</th>
+                                                    <th class="otable-col-head">File size</th>
+                                                    <th class="otable-col-head">Release time</th>
+                                                    <th class="otable-col-head">Download</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>UOS V20 Desktop (amd64)</td>
+                                                    <td>2.07 GB <br>(≈ 2170552.32 KB)</td>
+                                                    <td>2020-01-15 </td>
+                                                    <td>
+                                                        <div class="cb133-download">
+                                                            <button class="btn" title="无ED2K链接" data-clipboard-text=""
+                                                                data-original-title="复制到剪切板">
+                                                                <a class="license-link ion-link"
+                                                                    href="javascript:void(0)">无ED2K链接</a></button>
+                                                            <br>
+                                                            <button class="btn float" title="复制到剪贴板"
+                                                                data-clipboard-text="magnet:?xt=urn:btih:A047FE58D2EB679A0C65FB4B591D9749E485124C&dn=uos-20-desktop-amd64.iso">
+                                                                <a class="license-link ion-link"
+                                                                    href="javascript:void(0)">BT种子</a></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Ubuntu 20.04 Desktop (amd64)</td>
+                                                    <td>2.53GB <br>(≈ 2652897.28 KB)</td>
+                                                    <td>2020-04-23 </td>
+                                                    <td>
+                                                        <div class="cb133-download">
+                                                            <button class="btn" title="无ED2K链接" data-clipboard-text="">
+                                                                <a class="license-link ion-link"
+                                                                    href="javascript:void(0)">无ED2K链接</a></button>
+                                                            <br>
+                                                            <button class="btn float" title="复制到剪贴板"
+                                                                data-clipboard-text="magnet:?xt=urn:btih:9FC20B9E98EA98B4A35E6223041A5EF94EA27809&dn=ubuntu-20.04-desktop-amd64.iso&xl=2715254784">
+                                                                <a class="license-link ion-link"
+                                                                    href="javascript:void(0)">BT种子</a></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Ubuntu 20.04 Live Server (amd64)</td>
+                                                    <td>908MB <br>(≈ 929792 KB)</td>
+                                                    <td>2020-04-23 </td>
+                                                    <td>
+                                                        <div class="cb133-download">
+                                                            <button class="btn" title="无ED2K链接" data-clipboard-text="">
+                                                                <a class="license-link ion-link"
+                                                                    href="javascript:void(0)">无ED2K链接</a></button>
+                                                            <br>
+                                                            <button class="btn float" title="复制到剪贴板"
+                                                                data-clipboard-text="magnet:?xt=urn:btih:C44F931B1A3986851242D755D0AC46E9FA3C5D32&dn=ubuntu-20.04-live-server-amd64.iso&xl=952107008">
+                                                                <a class="license-link ion-link"
+                                                                    href="javascript:void(0)">BT种子</a></button>
+
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CentOS 8.1.1911 x86_64 BOOT ISO</td>
+                                                    <td>597MB <br>(≈ 929792 KB)</td>
+                                                    <td>未知 </td>
+                                                    <td>
+                                                        <div class="cb133-download">
+                                                            <button class="btn" title="无ED2K链接" data-clipboard-text="">
+                                                                <a class="license-link ion-link"
+                                                                    href="javascript:void(0)">无ED2K链接</a></button>
+                                                            <br>
+                                                            <button class="btn float" title="复制到剪贴板"
+                                                                data-clipboard-text="magnet:?xt=urn:btih:9669CE256DDB3667F81D3FE36D857956C423115A&dn=CentOS-8.1.1911-x86_64-boot.iso">
+                                                                <a class="license-link ion-link"
+                                                                    href="javascript:void(0)">BT种子</a></button>
+
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CentOS 8.1.1911 x86_64 BOOT ISO</td>
+                                                    <td>597MB <br>(≈ 611328 KB)</td>
+                                                    <td>未知 </td>
+                                                    <td>
+                                                        <div class="cb133-download">
+                                                            <button class="btn" title="无ED2K链接" data-clipboard-text="">
+                                                                <a class="license-link ion-link"
+                                                                    href="javascript:void(0)">无ED2K链接</a></button>
+                                                            <br>
+                                                            <button class="btn float" title="复制到剪贴板"
+                                                                data-clipboard-text="magnet:?xt=urn:btih:9669CE256DDB3667F81D3FE36D857956C423115A&dn=CentOS-8.1.1911-x86_64-boot.iso">
+                                                                <a class="license-link ion-link"
+                                                                    href="javascript:void(0)">BT种子</a></button>
+
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CentOS 8.1.1911 x86_64 DVD ISO</td>
+                                                    <td>7.04GB <br>(≈ 7381975.04 KB)</td>
+                                                    <td>未知 </td>
+                                                    <td>
+                                                        <div class="cb133-download">
+                                                            <button class="btn" title="无ED2K链接" data-clipboard-text="">
+                                                                <a class="license-link ion-link"
+                                                                    href="javascript:void(0)">无ED2K链接</a></button>
+                                                            <br>
+                                                            <button class="btn float" title="复制到剪贴板"
+                                                                data-clipboard-text="magnet:?xt=urn:btih:9DB46A612D04763AA7DB02A0FF63EDE2EA555867&dn=CentOS-8.1.1911-x86_64-dvd1.iso">
+                                                                <a class="license-link ion-link"
+                                                                    href="javascript:void(0)">BT种子</a></button>
+
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Deepin v15.11</td>
+                                                    <td>2.29GB <br>(≈ 2401239.04 KB)</td>
+                                                    <td>2019-07-19 </td>
+                                                    <td>
+                                                        <div class="cb133-download">
+                                                            <button class="btn" title="无ED2K链接" data-clipboard-text="">
+                                                                <a class="license-link ion-link"
+                                                                    href="javascript:void(0)">无ED2K链接</a></button>
+                                                            <br>
+                                                            <button class="btn float" title="复制到剪贴板"
+                                                                data-clipboard-text="magnet:?xt=urn:btih:3807cc2f117c5e70d9d3c1d04047a6b0dee2a844&dn=deepin-15.11-amd64.iso&xl=2459430912">
+                                                                <a class="license-link ion-link"
+                                                                    href="javascript:void(0)">BT种子</a></button>
+
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Fedora 32 Server x86_64</td>
+                                                    <td>1.93GB <br>(≈ 2023751.68 KB)</td>
+                                                    <td>2020-04-28 </td>
+                                                    <td>
+                                                        <div class="cb133-download">
+                                                            <button class="btn" title="无ED2K链接" data-clipboard-text="">
+                                                                <a class="license-link ion-link"
+                                                                    href="javascript:void(0)">无ED2K链接</a></button>
+                                                            <br>
+                                                            <button class="btn float" title="复制到剪贴板"
+                                                                data-clipboard-text="magnet:?xt=urn:btih:CE9149C328D2708C47C2B7738594F0DBC2601A16&dn=Fedora-Server-dvd-x86_64-32-1.6.iso&xl=2073035945">
+                                                                <a class="license-link ion-link"
+                                                                    href="javascript:void(0)">BT种子</a></button>
+
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Fedora 32 Workstation x86_64</td>
+                                                    <td>1.83GB <br>(≈ 1918894.08 KB)</td>
+                                                    <td>2020-04-28 </td>
+                                                    <td>
+                                                        <div class="cb133-download">
+                                                            <button class="btn" title="无ED2K链接" data-clipboard-text="">
+                                                                <a class="license-link ion-link"
+                                                                    href="javascript:void(0)">无ED2K链接</a></button>
+                                                            <br>
+                                                            <button class="btn float" title="复制到剪贴板"
+                                                                data-clipboard-text="magnet:?xt=urn:btih:7E0E6CFCD4E661A92BE9FDB41B4483D1FAEFF0B9&dn=Fedora-Workstation-Live-x86_64-32-1.6.iso&xl=1966179334">
+                                                                <a class="license-link ion-link"
+                                                                    href="javascript:void(0)">BT种子</a></button>
+
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- /CC02v0 -->
+                    </div>
+                </div>
+            </section>
+            <!-- /RT01v0 -->
+            <br>
+            <br>
+            <p>
+                <br>
+            </p>
+            <!-- /RC24v1 -->
+        </div>
+
+        <!-- copy -->
+        <script>
+            $(function () {
+                $("[data-toggle='tooltip']").tooltip();
+                $(".btn").click(function () {
+                    toastr.options = {
+                        "closeButton": false,
+                        "debug": false,
+                        "positionClass": "toast-top-right",
+                        "onclick": null,
+                        "showDuration": "1000",
+                        "hideDuration": "1000",
+                        "timeOut": "2000",
+                        "extendedTimeOut": "1000",
+                        "showEasing": "swing",
+                        "hideEasing": "linear",
+                        "showMethod": "fadeIn",
+                        "hideMethod": "fadeOut"
+                    }
+                    toastr.success('复制成功!');
+                });
+                new ClipboardJS('.btn'); //复制到剪切板插件
+            })
+        </script>
+        <!-- End copy -->
+
+
+    </section>
+    <!-- End Section -->
 
     <!-- footer -->
     <footer id="footer">
@@ -168,14 +442,16 @@
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
     <!-- End back-to-top -->
 
-    <!-- search-box -->
-    <!--<div class="search-box">
-        <input class="search-txt" type="text" name="" placeholder="Type to search">
-        <a class="search-btn" href="#">
-            <i class="fa fa-search"></i>
-        </a>
-    </div>-->
-    <!-- End search-box -->
+    <!-- scroll bar-->
+    <script type="text/javascript">
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+    <!-- End scroll bar-->
 </body>
 
 </html>
