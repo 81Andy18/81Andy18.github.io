@@ -25,6 +25,11 @@
 </head>
 
 <body class="fix-header card-no-border logo-center">
+    <!-- scroll bar -->
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <!-- End scroll bar -->
+
     <!-- top-nav -->
     <header class="topbar">
         <nav class="navbar top-navbar navbar-expand-md navbar-light">
@@ -102,11 +107,13 @@
                 <div class="rc24w1 cwidth">
                     <br>
                     <h2 class="rw-ptitle"><i class="fa fa-windows"></i>&nbsp;&nbsp;Windows</h2>
-                    <p style="text-indent: 2em;font-size: 18px;">The Windows operating system is an operating system developed by
+                    <p style="text-indent: 2em;font-size: 18px;">The Windows operating system is an operating system
+                        developed by
                         Microsoft in the United States, which came out in 1985. At first, it was an MS-DOS
                         simulation environment. Later, as Microsoft continued to update and upgrade it to improve
                         ease of use, Windows became the most widely used operating system.</p>
-                    <p style="text-indent: 2em;font-size: 18px;">Windows uses a graphical user interface (GUI), which is more
+                    <p style="text-indent: 2em;font-size: 18px;">Windows uses a graphical user interface (GUI), which is
+                        more
                         user-friendly than the previous MS-DOS that requires input instructions. With the continuous
                         upgrading of computer hardware and software, Windows is also constantly upgrading, from the
                         architecture of 16-bit, 32-bit to 64-bit, the system version from the original Windows 1.0
@@ -998,6 +1005,16 @@
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
     <!-- End back-to-top -->
 
+    <!-- scroll bar-->
+    <script type="text/javascript">
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+    <!-- End scroll bar-->
 </body>
 
 </html>
