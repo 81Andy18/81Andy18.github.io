@@ -707,13 +707,25 @@ body .f20w1>nav {
 
 .rw-inpagetabs {
     opacity: 0;
-    width: 100%;
+    min-width: 1100px;
     float: left;
     overflow: hidden;
     height: 3.6em;
     font-size: 1.6rem;
     position: relative;
     margin-bottom: 0.4em;
+}
+
+@media (max-width:1200px) {
+    #selector {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .rw-inpagetabs {
+        overflow-x: scroll;
+        overflow-y: scroll;
+    }
 }
 
 .rt01 .rw-inpagetabs {
@@ -832,6 +844,7 @@ a:visited {
 }
 
 .rw-inpagetab {
+    min-width: 1100px;
     display: none;
     clear: both;
 }
