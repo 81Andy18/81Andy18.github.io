@@ -121,7 +121,7 @@
             <br>
             <!-- RT01v0 -->
             <section class="rt01 rt01v0" data-trackas="rt01">
-                <div class="rt01w1 cwidth">
+                <div class="rt01w1 cwidth" id="selector">
 
                     <ul class="rw-inpagetabs rw-tabinit" data-ocomid="javase11-inpagetabs" data-instance="2">
                         <li class="active">
@@ -855,6 +855,30 @@
                         </section>
                         <!-- /CC02v0 -->
                     </div>
+
+                    <!-- Change Selector -->
+                    <script type="text/javascript">
+                        // 将按钮和盒子拿出来
+                        var myTab = document.getElementById('selector');
+                        var li = myTab.getElementsByTagName('li');
+                        var div = document.getElementsByClassName('rw-inpagetab');
+                        // 每一个button上面绑定事件
+                        for (var n = 0; n < li.length; n++) {
+                            //生成闭包的立即函数
+                            (function (i) {
+                                li[n].onclick = function () {
+                                    for (var m = 0; m < li.length; m++) {
+                                        li[m].className = ""; //清空效果
+                                        div[m].style.display = "none";
+                                    }
+                                    //当前点击的button设置变化
+                                    this.className = "active";
+                                    div[i].style.display = "block";
+                                }
+                            }(n))
+                        }
+                    </script>
+                    <!-- End Change Selector -->
                 </div>
             </section>
             <!-- /RT01v0 -->
@@ -892,28 +916,7 @@
         </script>
         <!-- End copy -->
 
-        <!-- Change Selector -->
-        <script type="text/javascript">
-            // 将按钮和盒子拿出来
-            var li = document.getElementsByTagName('li');
-            var div = document.getElementsByClassName('rw-inpagetab');
-            // 每一个button上面绑定事件
-            for (var n = 0; n < li.length; n++) {
-                //生成闭包的立即函数
-                (function (i) {
-                    li[n].onclick = function () {
-                        for (var m = 0; m < li.length; m++) {
-                            li[m].className = ""; //清空效果
-                            div[m].style.display = "none";
-                        }
-                        //当前点击的button设置变化
-                        this.className = "active";
-                        div[i].style.display = "block";
-                    }
-                }(n))
-            }
-        </script>
-        <!-- End Change Selector -->
+
     </section>
     <!-- footer -->
     <footer id="footer">
