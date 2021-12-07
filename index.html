@@ -20,6 +20,10 @@
 </head>
 
 <body>
+    <!-- scroll bar -->
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <!-- End scroll bar -->
     <!-- nav -->
     <nav>
         <div class="shell">
@@ -285,7 +289,8 @@
         </div>
         <div class="container">
             <div class="copyright">
-                Copyright &copy; 2021 - Bohemian.CN. All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;本站不支持IE，支持Chrome、Firefox、Opera，推荐使用 <a
+                Copyright &copy; 2021 - Bohemian.CN. All rights
+                reserved.&nbsp;&nbsp;&nbsp;&nbsp;本站不支持IE，支持Chrome、Firefox、Opera，推荐使用 <a
                     href="//www.microsoft.com/zh-cn/edge" target="_blank">新版 Microsoft Edge
                     浏览器</a>
                 访问本站
@@ -323,6 +328,17 @@
     <script src="js/scrollax.min.js"></script>
     <script src="js/main.js"></script>
     <!-- End loader -->
+
+    <!-- scroll bar-->
+    <script type="text/javascript">
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+    <!-- End scroll bar-->
 </body>
 
 </html>
