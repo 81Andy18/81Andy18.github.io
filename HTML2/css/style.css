@@ -1401,6 +1401,19 @@ ul.obullets li:before {
     align-items: center;
 }
 
+/* icon link */
 .fa-windows:before {
     content: "\f17a";
+}
+
+.fa-linux:before {
+    content: "\f17c";
+}
+
+.fa-android:before{
+    content:"\f17b";
+}
+
+.fa-apple:before{
+    content:"\f179";
 }
