@@ -724,7 +724,7 @@ body .f20w1>nav {
 
     .rw-inpagetabs {
         overflow-x: scroll;
-        overflow-y: scroll;
+        overflow-y: hidden;
     }
 }
 
@@ -868,6 +868,7 @@ a:visited {
 p {
     margin: 0 0 1.1em;
     line-height: 1.4;
+    font-family: consolas;
 }
 
 strong {
@@ -1341,4 +1342,27 @@ ul.obullets li:before {
 
 .fa-windows:before {
     content: "\f17a";
+}
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 8px;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(#aaca23,#a45d34);
+    -webkit-box-shadow: inset006pxrgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255, 0, 0, 0.4);
 }
