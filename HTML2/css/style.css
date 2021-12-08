@@ -35,8 +35,6 @@ a:not([href]):hover {
 }
 
 /* scroll bar */
-
-
 #scrollPath {
     position: fixed;
     top: 0;
@@ -1412,101 +1410,16 @@ ul.obullets li:before {
     content: "\f179";
 }
 
-::-webkit-scrollbar-thumb:vertical {
-    background-color: linear-gradient(to top, #008aff, #00ffe7);
-}
-
 /* 设置滚动条的样式 */
 body::-webkit-scrollbar {
-    width: 10px;
+    width: 0px;
 }
 
 div::-webkit-scrollbar {
     height: 5px;
 }
 
-/* 滚动槽 */
-body::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 10px;
-}
-
-/* 滚动条滑块 */
-body::-webkit-scrollbar-thumb {
-    border-radius: 3px;
-    background: linear-gradient(#008aff, #00ffe7);
-    animation: animate 5s linear infinite;
-}
-
-@keyframes animate {
-
-    0%,
-    100% {
-        filter: hue-rotate(0deg);
-    }
-
-    50% {
-        filter: hue-rotate(360deg);
-    }
-}
-
 div::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background: rgba(0, 0, 0, 0.8);
-}
-
-::-webkit-scrollbar-thumb:window-inactive {
-    background: rgba(255, 0, 0, 0.2);
-}
-
-#scrollPaths {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: auto;
-    height: 10px;
-    background: rgba(255, 255, 255, 0.05);
-}
-
-#progressbars {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 10px;
-    background: linear-gradient(to top, #008aff, #00ffe7);
-    animation: animate 5s linear infinite;
-}
-
-@keyframes animate {
-
-    0%,
-    100% {
-        filter: hue-rotate(0deg);
-    }
-
-    50% {
-        filter: hue-rotate(360deg);
-    }
-}
-
-body::-webkit-scrollbar-track:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, #008aff, #00ffe7);
-    filter: blur(10px);
-}
-
-body::-webkit-scrollbar-track:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, #008aff, #00ffe7);
-    filter: blur(30px);
 }
