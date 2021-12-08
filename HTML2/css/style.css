@@ -766,7 +766,6 @@ body .f20w1>nav {
     opacity: 0;
     min-width: 1100px;
     float: left;
-    overflow: hidden;
     height: 3.6em;
     font-size: 1.6rem;
     position: relative;
@@ -777,10 +776,6 @@ body .f20w1>nav {
     #selector {
         overflow-x: scroll;
         overflow-y: hidden;
-    }
-
-    ::-webkit-scrollbar {
-        width: auto;
     }
 
     .rw-inpagetabs {
