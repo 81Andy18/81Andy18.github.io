@@ -42,6 +42,7 @@ a:not([href]):hover {
     width: 10px;
     height: 100%;
     background: rgba(255, 255, 255, 0.05);
+    z-index: 20;
 }
 
 #progressbar {
@@ -51,6 +52,7 @@ a:not([href]):hover {
     width: 10px;
     background: linear-gradient(to top, #008aff, #00ffe7);
     animation: animate 5s linear infinite;
+    z-index: 20;
 }
 
 @keyframes animate {
