@@ -26,6 +26,8 @@
 
 <body class="fix-header card-no-border logo-center">
     <!-- scroll bar -->
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
     <!-- End scroll bar -->
 
     <!-- top-nav -->
@@ -129,8 +131,6 @@
             <!-- RT01v0 -->
             <section class="rt01 rt01v0" data-trackas="rt01">
                 <div class="rt01w1 cwidth" id="selector">
-                    <!-- scroll bar -->
-                    <!-- End scroll bar -->
                     <ul class="rw-inpagetabs rw-tabinit" data-ocomid="javase11-inpagetabs" data-instance="2">
                         <li class="active">
                             <a href="#Windows-11" id="rt01tab-Windows-11" aria-controls="Windows-11" role="tab"
@@ -927,7 +927,7 @@
 
     </section>
     <!-- End Section -->
-    
+
     <!-- footer -->
     <footer id="footer">
         <div class="footer-top">
@@ -1009,14 +1009,14 @@
     <!-- End back-to-top -->
 
     <!-- scroll bar-->
-    <!--<script type="text/javascript">
+    <script type="text/javascript">
         let progress = document.getElementById('progressbar');
         let totalHeight = document.body.scrollHeight - window.innerHeight;
         window.onscroll = function () {
             let progressHeight = (window.pageYOffset / totalHeight) * 100;
             progress.style.height = progressHeight + "%";
         }
-    </script>-->
+    </script>
     <!-- End scroll bar-->
 </body>
 
