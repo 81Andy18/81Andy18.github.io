@@ -767,30 +767,11 @@ body .f20w1>nav {
     }
 }
 
-.rw-inpagetabs li:first-of-type:before {
-    content: "";
-    height: 3px;
-    width: 100vw;
-    bottom: -3px;
-    left: 0;
-    position: absolute;
-    background: #E4E1DD;
-}
-
 a,
 a:link,
 a:visited {
     color: #006B8F;
     text-decoration: none;
-}
-
-.rw-inpagetabs li a {
-    position: relative;
-    color: inherit !important;
-    display: block;
-    padding: 1em 0;
-    margin-right: 2em;
-    outline-offset: -2px;
 }
 
 .rw-inpagetabs li.active a:after {
@@ -922,7 +903,7 @@ strong {
     width: 100%;
     float: left;
     overflow: hidden;
-    height: 3.6em;
+    height: 4.2em;
     font-size: 1.6rem;
     position: relative;
     margin-bottom: 0.4em;
@@ -948,7 +929,7 @@ strong {
 .rw-inpagetabs li:first-of-type:before {
     content: "";
     height: 3px;
-    width: 100vw;
+    width: 115em;
     bottom: -3px;
     left: 0;
     position: absolute;
@@ -1385,8 +1366,8 @@ ul.obullets li:before {
 }
 
 /* 设置滚动条的样式 */
-body::-webkit-scrollbar {
-    width: 0px;
+body::-webkit-scrollbar{
+    width: 0;
 }
 
 div::-webkit-scrollbar {
@@ -1395,5 +1376,14 @@ div::-webkit-scrollbar {
 
 div::-webkit-scrollbar-thumb {
     border-radius: 5px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+ul::-webkit-scrollbar{
+    top: 10px;
+    height: 5px;
+    border-radius: 5px;
+}
+ul::-webkit-scrollbar-thumb{
     background: rgba(0, 0, 0, 0.8);
 }
