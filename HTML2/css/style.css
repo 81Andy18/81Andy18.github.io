@@ -760,35 +760,11 @@ body .f20w1>nav {
     }
 }
 
-.rw-inpagetabs {
-    opacity: 0;
-    min-width: 1100px;
-    float: left;
-    height: 3.6em;
-    font-size: 1.6rem;
-    position: relative;
-    margin-bottom: 0.4em;
-}
-
 @media (max-width:1200px) {
     #selector {
         overflow-x: scroll;
         overflow-y: hidden;
     }
-
-    .rw-inpagetabs {
-        overflow-x: scroll;
-        overflow-y: hidden;
-    }
-
-}
-
-.rt01 .rw-inpagetabs {
-    margin-top: -16px;
-}
-
-.rw-inpagetabs.rw-tabinit {
-    opacity: 1;
 }
 
 .rw-inpagetabs li {
@@ -964,7 +940,7 @@ strong {
 }
 
 .rw-inpagetabs.rw-tabinit {
-    opacity: 1;
+    opacity: 1; 
 }
 
 .rw-inpagetabs li {
@@ -1422,7 +1398,10 @@ div::-webkit-scrollbar {
     height: 5px;
 }
 
-div::-webkit-scrollbar-thumb {
+ul::-webkit-scrollbar {
+}
+
+ul div::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background: rgba(0, 0, 0, 0.8);
 }
