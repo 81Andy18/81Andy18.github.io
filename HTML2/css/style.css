@@ -1072,6 +1072,7 @@ table tr th {
 .cb133 .otable thead tr th {
     background: #fff;
     text-align: center;
+    vertical-align: middle;
 }
 
 .otable tr td:first-child {
