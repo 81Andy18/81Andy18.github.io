@@ -945,11 +945,6 @@ strong {
     display: inline-block;
 }
 
-#li-rymodal{
-    list-style: none;
-    display: inline-block;
-}
-
 .rw-inpagetabs li:first-of-type:before {
     content: "";
     height: 3px;
