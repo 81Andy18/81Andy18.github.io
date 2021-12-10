@@ -767,13 +767,6 @@ body .f20w1>nav {
     }
 }
 
-.rw-inpagetabs li {
-    float: left;
-    position: relative;
-    white-space: nowrap;
-    font-weight: 700;
-}
-
 .rw-inpagetabs li:first-of-type:before {
     content: "";
     height: 3px;
@@ -933,6 +926,8 @@ strong {
     font-size: 1.6rem;
     position: relative;
     margin-bottom: 0.4em;
+    overflow-x: scroll;
+    white-space: nowrap;
 }
 
 .rt01 .rw-inpagetabs {
@@ -944,10 +939,14 @@ strong {
 }
 
 .rw-inpagetabs li {
-    float: left;
     position: relative;
     white-space: nowrap;
     font-weight: 700;
+}
+
+#li-rymodal{
+    list-style: none;
+    display: inline-block;
 }
 
 .rw-inpagetabs li:first-of-type:before {
@@ -1398,10 +1397,7 @@ div::-webkit-scrollbar {
     height: 5px;
 }
 
-ul::-webkit-scrollbar {
-}
-
-ul div::-webkit-scrollbar-thumb {
+div::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background: rgba(0, 0, 0, 0.8);
 }
